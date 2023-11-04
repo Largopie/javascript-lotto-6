@@ -34,9 +34,9 @@ describe('배열 테스트', () => {
       expected: '[1, 3, 5, 14, 22, 45]',
     },
   ])('join 메서드로 배열을 문자열로 표현하기', ({ input, expected }) => {
-    const OPEN_ARRAY = '[';
-    const CLOSE_ARRAY = ']';
-    const COMMA_SPACE = ', ';
-    expect(OPEN_ARRAY + input.join(COMMA_SPACE) + CLOSE_ARRAY).toBe(expected);
+    const START_SQUARE_BRACKET = '[';
+    const CLOSE_SQUARE_BRACKET = ']';
+    const COMMA_AND_SPACE = ', ';
+    expect(START_SQUARE_BRACKET + input.join(COMMA_AND_SPACE) + CLOSE_SQUARE_BRACKET).toBe(expected);
   });
 });
